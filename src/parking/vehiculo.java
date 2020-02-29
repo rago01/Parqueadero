@@ -3,7 +3,7 @@ package parking;
 public class vehiculo {
 	private String placa;
 	private String tipo;
-	private String modelo;
+	private int modelo;
 	
 	public String getPlaca() {
 		return placa;
@@ -21,11 +21,11 @@ public class vehiculo {
 		this.tipo = tipo;
 	}
 	
-	public String getModelo() {
+	public int getModelo() {
 		return modelo;
 	}
 	
-	public void setModelo(String modelo) {
+	public void setModelo(int modelo) {
 		this.modelo = modelo;
 	}
 
