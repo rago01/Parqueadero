@@ -14,7 +14,7 @@ public class vehiculo {
 	}
 	
 	public String getTipo() {
-		return placa;
+		return tipo;
 	}
 	
 	public void setTipo(String tipo) {

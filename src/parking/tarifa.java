@@ -5,24 +5,24 @@ public class tarifa {
 	private int tiempo;
 	private String tiempoTarifa;
 	
-	public String gettarifaTipoVehiculo(String tarifaTipoVehiculo) {
+	public String gettarifaTipoVehiculo() {
 		return tarifaTipoVehiculo;
 	}
-	public void setTipoVehiculo() {
+	public void settarifaTipoVehiculo(String tarifaTipoVehiculo) {
 		this.tarifaTipoVehiculo = tarifaTipoVehiculo;
 	}
 	
-	public int getTiempo(int tiempo) {
+	public int getTiempo() {
 		return tiempo;
 	}
-	public void setTiempo() {
+	public void setTiempo(int tiempo) {
 		this.tiempo = tiempo;
 	}
 	
 	public String getTiempoTarifa() {
 		return tiempoTarifa;
 	}
-	public void setTiempoTarifa() {
+	public void setTiempoTarifa(String tiempoTarifa ) {
 		this.tiempoTarifa = tiempoTarifa;
 	}
 }
