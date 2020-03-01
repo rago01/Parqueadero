@@ -23,7 +23,6 @@ public class principal {
 		System.out.println("Ingrese el tipo de vehiculo:\n 'V' (Vehiculo)\n 'M' (Motocicleta)\n 'B' (Bicicleta): ");
 		String tipo = leer.next();
 		vehiculo1.setTipo(tipo);
-		
 		tarifa1.settarifaTipoVehiculo(tipo);
 
 		//INFORMACION DE LA TARIFA
@@ -79,11 +78,38 @@ public class principal {
 				}
 			} else {
 				System.out.print("Reacrgo nocturno: No aplica");
-			}
-			
-			
-			
-		
+				
+				if (vehiculo1.getTipo().equals ("V") || vehiculo1.getTipo().equals("v")) {
+					int valorMinuto = 60;
+					if (tarifa1.getTiempo() > 180) {
+						int valorTotal = (valorMinuto)*tarifa1.getTiempo()+9000;
+						System.out.println("\nTotal a pagar: "+ valorTotal);
+					}else {
+						int valorTotal = (valorMinuto)*tarifa1.getTiempo();
+						System.out.println("\nTotal a pagar: "+valorTotal);
+					}
+				}
+				if (vehiculo1.getTipo().contentEquals("M") || vehiculo1.getTipo().equals("m")) {
+					int valorMinuto= 40;
+					if (tarifa1.getTiempo() > 180) {
+						int valorTotal = (valorMinuto)*tarifa1.getTiempo()+7000;
+						System.out.println("\nTotal a pagar: "+ valorTotal);
+					}else {
+						int valorTotal = valorMinuto*tarifa1.getTiempo();
+						System.out.println("\nTotal a pagar: "+valorTotal);
+					}
+				}
+				if (vehiculo1.getTipo().equals("B") || vehiculo1.getTipo().equals("b")) {
+					int valorMinuto = 20;
+					if (tarifa1.getTiempo() > 180) {
+						int valorTotal = valorMinuto*tarifa1.getTiempo()+4000;
+						System.out.println("Total a pagar: "+valorTotal);
+					}else {
+						int valorTotal = valorMinuto*tarifa1.getTiempo();
+						System.out.println("\nTotal a pagar: "+ valorTotal);
+					}
+				}
+			}	
 	}
 
 }
